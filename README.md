@@ -99,11 +99,6 @@ ros2 topic info /turtle1/cmd_vel
 ```
 *Shows how many publishers and subscribers exist on this topic.*
 
-```bash
-ros2 topic info /turtle1/cmd_vel --verbose
-```
-*Full details: node names, QoS profiles (reliability, history depth, etc.).*
-
 ---
 
 ### Step 8 — Understand a message's structure
