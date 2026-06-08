@@ -14,7 +14,7 @@ Open a **new terminal** whenever the guide says so. Always source ROS 2 first in
 > Do this in **every** new terminal you open before running any ROS 2 command.
 
 ```bash
-source /opt/ros/jazzy/setup.bash
+source /opt/ros/humble/setup.bash
 ```
 *Makes all ROS 2 commands available in the current terminal.*
 
@@ -39,7 +39,7 @@ ros2 run turtlesim turtlesim_node
 Open **Terminal 2**:
 
 ```bash
-source /opt/ros/jazzy/setup.bash
+source /opt/ros/humble/setup.bash
 ros2 run turtlesim turtle_teleop_key
 ```
 *Starts a keyboard controller. Use arrow keys to move the turtle.*
@@ -51,7 +51,7 @@ ros2 run turtlesim turtle_teleop_key
 Open **Terminal 3**:
 
 ```bash
-source /opt/ros/jazzy/setup.bash
+source /opt/ros/humble/setup.bash
 ros2 node list
 ```
 *Lists all active nodes. You should see `/turtlesim` and `/teleop_turtle`.*
@@ -128,7 +128,7 @@ ros2 run rqt_graph rqt_graph
 
 Open a new terminal:
 ```bash
-source /opt/ros/jazzy/setup.bash
+source /opt/ros/humble/setup.bash
 ros2 run turtlesim turtlesim_node --ros-args --remap __node:=my_turtle
 ```
 *Launches turtlesim with a custom node name. Now run `ros2 node list` — you'll see `/my_turtle`.*
@@ -342,7 +342,7 @@ colcon build --packages-select cpp_pubsub
 
 Open **Terminal A**:
 ```bash
-source /opt/ros/jazzy/setup.bash
+source /opt/ros/humble/setup.bash
 source ~/ros2_ws/install/setup.bash
 ros2 run cpp_pubsub talker
 ```
@@ -360,7 +360,7 @@ Expected output (every 0.5 seconds):
 
 Open **Terminal B**:
 ```bash
-source /opt/ros/jazzy/setup.bash
+source /opt/ros/humble/setup.bash
 source ~/ros2_ws/install/setup.bash
 ros2 run cpp_pubsub listener
 ```
@@ -380,7 +380,7 @@ Expected output:
 
 Open **Terminal C**:
 ```bash
-source /opt/ros/jazzy/setup.bash
+source /opt/ros/humble/setup.bash
 ros2 topic list
 ```
 *You'll see `/topic` — the channel our two nodes are using.*
