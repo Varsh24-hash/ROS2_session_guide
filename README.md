@@ -9,7 +9,7 @@ Open a **new terminal** whenever the guide says so. Always source ROS 2 first in
 
 ---
 
-## PART 1 — ENVIRONMENT SETUP (5 min)
+## PART 1 — ENVIRONMENT SETUP 
 
 > Do this in **every** new terminal you open before running any ROS 2 command.
 
@@ -20,7 +20,7 @@ source /opt/ros/jazzy/setup.bash
 
 ---
 
-## PART 2 — TURTLESIM: YOUR FIRST NODES & TOPICS (30 min)
+## PART 2 — TURTLESIM: YOUR FIRST NODES & TOPICS 
 
 ### Step 1 — Launch the Turtlesim window
 
@@ -172,7 +172,7 @@ source install/setup.bash
 
 ---
 
-## PART 4 — CREATE YOUR OWN PUBLISHER & SUBSCRIBER PACKAGE (30 min)
+## PART 4 — CREATE YOUR OWN PUBLISHER & SUBSCRIBER PACKAGE 
 
 > We'll build one package called `cpp_pubsub` that contains two nodes: a **talker** (publisher) and a **listener** (subscriber).
 
@@ -382,51 +382,6 @@ ros2 topic info /topic
 *Should show: Publisher count: 1, Subscription count: 1*
 
 Press `Ctrl+C` in all terminals when done.
-
----
-
-## QUICK REFERENCE CHEAT SHEET
-
-| Command | What it does |
-|---|---|
-| `ros2 run <pkg> <exe>` | Launch a node |
-| `ros2 node list` | List all running nodes |
-| `ros2 node info <node>` | Inspect a node's connections |
-| `ros2 topic list` | List all active topics |
-| `ros2 topic list -t` | List topics with message types |
-| `ros2 topic echo <topic>` | Print live data from a topic |
-| `ros2 topic info <topic>` | Publisher/subscriber count |
-| `ros2 topic info <topic> --verbose` | Full QoS details |
-| `ros2 topic hz <topic>` | Message publish rate |
-| `ros2 topic bw <topic>` | Topic bandwidth usage |
-| `ros2 topic pub <topic> <type> <data>` | Publish to a topic manually |
-| `ros2 topic find <msg_type>` | Find topics by message type |
-| `ros2 interface show <msg_type>` | Show a message's field structure |
-| `ros2 pkg create ...` | Create a new package |
-| `colcon build` | Build all packages in workspace |
-| `colcon build --packages-select <pkg>` | Build only one package |
-| `source install/setup.bash` | Activate the workspace |
-
----
-
-## KEY CONCEPTS (1-Minute Summary)
-
-| Concept | What it is |
-|---|---|
-| **Node** | A single program with one purpose (e.g., move motors, read camera) |
-| **Topic** | A named channel through which nodes exchange data |
-| **Message** | The data type sent over a topic (e.g., `Twist`, `String`) |
-| **Publisher** | A node that sends data to a topic |
-| **Subscriber** | A node that receives data from a topic |
-| **Package** | A folder containing your code + build config |
-| **Workspace** | A folder containing multiple packages + build outputs |
-| **colcon** | The tool that builds your packages |
-| **Underlay** | The base ROS 2 installation |
-| **Overlay** | Your workspace built on top of the underlay |
-
----
-
-*ROS 2 Jazzy · Session prepared for a 2-hour hands-on class**Shows everything about the node: what topics it subscribes to, publishes, services it offers, etc.*
 
 ---
 
