@@ -1,4 +1,4 @@
-# ROS 2 (Jazzy) — 2-Hour Hands-On Session Guide
+# ROS 2 - Hands-On Session Guide
 ### Topics: Nodes · Topics · Messages · Turtlesim · Package Creation
 
 ---
