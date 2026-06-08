@@ -99,59 +99,6 @@ ros2 topic info /turtle1/cmd_vel
 ```
 *Shows how many publishers and subscribers exist on this topic.*
 
-```bash
-ros2 topic info /turtle1/cmd_vel --verbose
-```
-*Full details: node names, QoS profiles (reliability, history depth, etc.).*
-
----
-
-### Step 8 — Understand a message's structure
-
-```bash
-ros2 interface show geometry_msgs/msg/Twist
-```
-*Prints the exact fields inside the `Twist` message type (linear x/y/z + angular x/y/z).*
-
----
-
-### Step 9 — Publish to a topic directly from terminal
-
-```bash
-ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}"
-```
-*Publishes a velocity command continuously — turtle will move in a circle.*  
-Press `Ctrl+C` to stop.
-
-Publish **only once**:
-```bash
-ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}"
-```
-*`--once` = publish one message then exit.*
-
----
-
-### Step 10 — Check publish rate and bandwidth
-
-```bash
-ros2 topic hz /turtle1/pose
-```
-*Shows how fast (messages/second) data is being published on this topic.*
-
-```bash
-ros2 topic bw /turtle1/pose
-```
-*Shows bandwidth (KB/s) consumed by this topic.*
-
----
-
-### Step 11 — Find topics by message type
-
-```bash
-ros2 topic find geometry_msgs/msg/Twist
-```
-*Lists all topics that use the `Twist` message type.*
-
 ---
 
 ### Step 12 — Visualize the node graph (optional, if rqt is installed)
