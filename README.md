@@ -74,10 +74,6 @@ ros2 topic list
 ```
 *Lists all topics currently active in the system.*
 
-```bash
-ros2 topic list -t
-```
-*Same list, but also shows the message type for each topic (the `-t` flag = type).*
 
 ---
 
@@ -119,16 +115,6 @@ ros2 run rqt_graph rqt_graph
 
 ---
 
-### Step 13 — Rename a node (Remapping)
-
-Open a new terminal:
-```bash
-source /opt/ros/humble/setup.bash
-ros2 run turtlesim turtlesim_node --ros-args --remap __node:=my_turtle
-```
-*Launches turtlesim with a custom node name. Now run `ros2 node list` — you'll see `/my_turtle`.*
-
----
 
 ### CLEANUP — Stop everything
 
