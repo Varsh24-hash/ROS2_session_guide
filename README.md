@@ -188,9 +188,9 @@ ros2 pkg create --build-type ament_cmake --license Apache-2.0 cpp_pubsub
 ```bash
 cd ~/ros2_ws/src/cpp_pubsub/src
 
-wget -O publisher_lambda_function.cpp https://raw.githubusercontent.com/ros2/examples/jazzy/rclcpp/topics/minimal_publisher/lambda.cpp
+wget -O publisher_lambda_function.cpp https://raw.githubusercontent.com/ros2/examples/humble/rclcpp/topics/minimal_publisher/lambda.cpp
 
-wget -O subscriber_lambda_function.cpp https://raw.githubusercontent.com/ros2/examples/jazzy/rclcpp/topics/minimal_subscriber/lambda.cpp
+wget -O subscriber_lambda_function.cpp https://raw.githubusercontent.com/ros2/examples/humble/rclcpp/topics/minimal_subscriber/lambda.cpp
 ```
 *Downloads both source files into the `src/` folder of the package.*
 
